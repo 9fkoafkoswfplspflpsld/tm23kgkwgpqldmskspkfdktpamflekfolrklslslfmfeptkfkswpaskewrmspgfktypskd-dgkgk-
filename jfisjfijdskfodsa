@@ -15,7 +15,7 @@
 @import url('https://dablulite.github.io/Cyan/import.css');
 
 :root {
-  --cyan-background-img: url('https://i.imgur.com/aZgoLPk.jpg');
+  --cyan-background-img: url('https://i.imgur.com/D1C0GyB.jpg');
   --cyan-blur-radius: 0px;
   --cyan-accent-color: #009f88;
   --cyan-background-hue: 225;
