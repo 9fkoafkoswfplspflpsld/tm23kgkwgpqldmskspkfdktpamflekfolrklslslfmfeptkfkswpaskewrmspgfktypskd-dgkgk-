@@ -1,6 +1,6 @@
 {
-  "name": "cow jack",
-  "description": "My waifu from Fate",
+  "name": "Jack the Milk Giver",
+  "description": "My Fate Waifu",
   "version": "1.2",
   "authors": [
     {
@@ -153,6 +153,5 @@
     "blur": 0.1,
     "url": "https://i.imgur.com/5sBkPRu.jpg",
     "alpha": 0.1
-  },
-  "displayName": "Jack the Milk Giver"
+  }
 }
