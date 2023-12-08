@@ -1,65 +1,55 @@
 /**
- * @name GX1
- * @author Hawk#4872
- * @version 1
- * @description A highly customizable theme based off of the OperaGX browser.
- * @source https://github.com/L-Ratio/OperaGXTheme
- * @invite Xn7UUQUHbN
- * @BDEditor OperaGX Theme
-*/
+ * @name BasicBackground 2
+ * @description Allows you to use a Background Image without greatly altering the basic Layout of Discord
+ * @author DevilBro
+ * @version 1.0.5
+ * @authorId 278543574059057154
+ * @invite Jx3TjNS
+ * @donate https://www.paypal.me/MircoWittrien
+ * @patreon https://www.patreon.com/MircoWittrien
+ * @website https://mwittrien.github.io/
+ * @source https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/BasicBackground/
+ * @updateUrl https://mwittrien.github.io/BetterDiscordAddons/Themes/BasicBackground/BasicBackground.theme.css
+ */
 
-@import url('https://l-ratio.github.io/OperaGXTheme/release/main.css');
+/* To change stuff like the colors, transparency and background image, change the variables inside the root {}, do NOT change the @import url() */
+
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/BasicBackground/BasicBackground.css);
 
 :root {
-  --background: url('https://i.imgur.com/W5VvFhD.png');
-  --background-behind-appmount: 8, 5, 14;
-  --background-accent-color-1: 222,67,100 ;
-  --accent-color-1: 222,67,100;
-  --accent-color-2: 222,67,100;
-  --border-brightness: 1;
-  --dark-background-color: 18, 16, 25 ;
-  --darker-background-color: 8, 5, 14;
-  --wintitlebar-transparency: 0.7;
-  --header-transparency: 0.5;
-  --serverlist-transparency: 0.5;
-  --channels-transparency: 0.5;
-  --chat-transparency: 0.5;
-  --memberlist-transparency: 0.5;
-  --wintitlebar-background-blur: 0px;
-  --header-background-blur: 0px;
-  --serverlist-background-blur: 0px;
-  --channels-background-blur: 0px;
-  --chat-background-blur: 0px;
-  --memberlist-background-blur: 0px;
-  --customFont: Chakra Petch;
-  --codeBlocksCustomFont: Chakra Petch;
-  --fullwhite-font: 250, 253, 255;
-  --normal-font: 201, 203, 206;
-  --normal-hover-font: 238, 239, 240;
-  --muted-font: 114, 118, 125;
-  --link-text: 0, 176, 244;
-  --gx-red: 181,32,63 ;
-  --gx-red-2: 181,32,63 ;
-  --gx-yellow: 234, 234, 34  ;
-  --gx-yellow-2: 255, 255, 68 ;
-  --gx-green: 0, 212, 81 ;
-  --gx-green-2: 0, 255, 129 ;
-  --font-in-accent: 0, 0, 0  ;
-  --category-name-transform: unset;
-  --chatbox-transparency: 1;
-  --chatbox-focused-transparency: 1;
-  --other-highlighted-transparency: 1;
-  --other-transparency: 1;
-  --wintitlebar-transparency-color: var(--dark-background-color) ;
-  --wintb-focused-alpha: 1;
-  --wintb-focused-color: var(--darker-background-color);
-  --header-transparency-color: var(--dark-background-color);
-  --serverlist-transparency-color: var(--dark-background-color);
-  --channels-transparency-color: var(--dark-background-color);
-  --chat-transparency-color: var(--dark-background-color);
-  --memberlist-transparency-color: var(--dark-background-color);
+	--transparencycolor:			0,0,0;						/* default:	0,0,0																								*/
+	--transparencyalpha:			0.15;						/* default: 0.15				(general darkness of the app)													*/
+	--messagetransparency:			0.5;						/* default: 0.5					(additional shadows behind messages, set to 0 to remove boxes)					*/
+	--guildchanneltransparency:		0.15;						/* default: 0.15				(additional darkness for guild/channel list)									*/
+	--chatinputtransparency:		0.0;						/* default: 0.0					(additional darkness for chat input container)									*/
+	--memberlisttransparency:		0.0;						/* default: 0.0					(additional darkness for member list)											*/
+	--accentcolor:					190,78,180;					/* default: 190,78,180			(RGB-format - blurple: 88,101,242 bd-blue: 58,113,193)							*/
+	
+	--font:							"gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;		/* font used in most places										*/
+	--textshadow:					transparent;				/* default: transparent			(textshadow for text ontop of accentcolor nodes, ONLY accepts a color, no px)	*/
+	--settingsicons:				1;							/* Use Settings Icons in User Settings: 1 = yes, 0 = no															*/
+	
+	--background:					url(https://64.media.tumblr.com/0992c175ea4c4bc5c2c8428f36f5fea1/tumblr_osq89iM7gj1urhbnlo1_1280.jpg);	/* general background image				*/
+	--backgroundposition:			center;						/* default: center				(position of background - values: [center/top/right/bottom/left])				*/
+	--backgroundsize:				cover;						/* default: cover				(sizefit of background - values: [cover/contain/auto])							*/
+	--backgroundblur:				unset;						/* default: unset				(blur in px, only works when --background is set to an image)					*/
+	
+	--popout:						var(--background);			/* default: var(--background)	(change to use another background/color for modals/popouts)						*/
+	--popoutposition:				var(--backgroundposition);	/* default: center				(position of popout - values: [center/top/right/bottom/left])					*/
+	--popoutsize:					var(--backgroundsize);		/* default: cover				(sizefit of popout - values: [cover/contain/auto])								*/
+	--popoutblur:					var(--backgroundblur);		/* default: unset				(blur in px, only works when --popout is set to an image)						*/
+	
+	--backdrop:						rgba(0,0,0,0.85);			/* default: rgba(0,0,0,0.85)	(change to use another background/color for backdrops)							*/
+	--backdropposition:				center;						/* default: center				(position of backdrop - values: [center/top/right/bottom/left])					*/
+	--backdropsize:					cover;						/* default: cover				(sizefit of backdrop - values: [cover/contain/auto])							*/
+	--backdropblur:					unset;						/* default: unset				(blur in px, only works when --backdrop is set to an image)						*/
+	
+	--textbrightest: 				255,255,255;				/* default: 255,255,255			(text color for the brightest texts)											*/
+	--textbrighter: 				222,222,222;				/* default: 222,222,222			(text color for brighter texts)													*/
+	--textbright: 					200,200,200;				/* default: 200,200,200			(text color for bright texts)													*/
+	--textdark: 					160,160,160;				/* default: 160,160,160			(text color for dark texts)														*/
+	--textdarker: 					125,125,125;				/* default: 125,125,125			(text color for darker texts)													*/
+	--textdarkest: 					90,90,90;					/* default: 90,90,90			(text color for the darkest texts)												*/
+	
+	--version1_0_5:					none;						/* DO NOT CHANGE THIS VARIABLE , USED TO HIDE UPDATE NOTICE														*/
 }
-
-/* Any custom CSS below here */
-
-
